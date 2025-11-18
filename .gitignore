@@ -1,0 +1,14 @@
+# Ignore the specific output image
+gradient_background.png
+
+# Ignore Python compiled files (automatically generated)
+__pycache__/
+*.pyc
+
+# Ignore virtual environments (if you use them)
+.venv/
+env/
+venv/
+
+# Ignore OS generated files
+.DS_Store
