@@ -1,3 +1,6 @@
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+
 # Gradient Background Generator
 
 A Python script that generates high-quality, smooth horizontal gradients using linear interpolation. The script blends multiple RGB colors to create a 1920x1080 (HD) image, perfect for slide backgrounds or wallpapers.
