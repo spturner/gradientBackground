@@ -24,10 +24,8 @@ pip install Pillow
 <!-- end list -->
 
 ```bash
-python generate_gradient.py
+python gradientBackground.py
 ```
-
-*(Replace `generate_gradient.py` with whatever you named your python file).*
 
 3.  The script will generate a file named `gradient_background.png` in the same directory.
 
