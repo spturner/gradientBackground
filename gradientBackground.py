@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageEnhance
 
 # Define gradient colours using RGB values 
 # You can add more colours to create different blended backgrounds
@@ -27,6 +27,16 @@ for x in range(width):
     g = int(colours[idx][1] * (1 - local_ratio) + colours[next_idx][1] * local_ratio)
     b = int(colours[idx][2] * (1 - local_ratio) + colours[next_idx][2] * local_ratio)
     draw.line([(x, 0), (x, height)], fill=(r, g, b))
+
+# Apply brightness and contrast enhancements
+brightness_factor = 1.0  # 1.0 means no change, >1.0 brighter, <1.0 darker
+contrast_factor = 1.0   # 1.0 means no change, >1.0 more contrast, <1.0 less contrast
+
+enhancer = ImageEnhance.Brightness(gradient)
+gradient = enhancer.enhance(brightness_factor)
+
+enhancer = ImageEnhance.Contrast(gradient)
+gradient = enhancer.enhance(contrast_factor)
 
 # Save your background
 gradient.save("gradient_background.png")
