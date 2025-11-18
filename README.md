@@ -54,6 +54,15 @@ To change the output resolution, update the `width` and `height` variables:
 width, height = 3840, 2160  # Example for 4K
 ```
 
+### Adjusting Brightness and Contrast
+
+You can modify the `brightness_factor` and `contrast_factor` variables in the script to adjust the output image's brightness and contrast.
+
+```python
+brightness_factor = 1.2  # > 1.0 for brighter, < 1.0 for darker
+contrast_factor = 1.5    # > 1.0 for more contrast, < 1.0 for less contrast
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
